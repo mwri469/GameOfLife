@@ -17,7 +17,7 @@
 #include <windows.h>
 #define _CRT_SECURE_NO_WARNINGS
 #define NUM_ROWS 22
-#define NUM_COLS 64
+#define NUM_COLS 512
 
 
 void PrintArray(int cells[NUM_ROWS][NUM_COLS]);
@@ -49,7 +49,7 @@ int main(void)
     PrintBanner();
     int cells[NUM_ROWS][NUM_COLS] = { 0 };
     InitialiseCells(cells); 
-    CreatePentaDecathlon(cells, 348);
+    CreateGlider(cells, 348);
     PrintArray(cells); // Initialise the array and display it to the user
 
     while (isTrue) {
